@@ -1,0 +1,23 @@
+Horario
+    -salon (validar) si el salon esta libre o no None -------> ruta 
+    -salon(validar)
+    -salon(validar)
+Horario
+    -salon (validar)
+    -salon(validar)
+    -salon(validar)
+
+Horario
+    -salon (validar)
+    -salon
+    -salon
+
+Horario
+    -salon (validar)
+    -salon(validar)
+    -salon(validar)
+"Horario 6-10""Artemis"={ grupo :{porfesor 
+                                :ruta 
+                                :estudianrtwez 
+
+}

@@ -1,0 +1,100 @@
+[
+    {
+        "1095": {
+            "Modulo 1": {
+                "QuiZ#1": 23,
+                "QuiZ#2": 12,
+                "Tarea#1": 1200,
+                "Tarea#2": 23,
+                "Proyecto": 23,
+                "Evaluacion": 43,
+                "Nota final": 58.15,
+                "Riesgo": "Riesgo Alto"
+            }
+        }
+    },
+    {
+        "77": {
+            "Modulo 2": {
+                "QuiZ#1": 100,
+                "QuiZ#2": 22,
+                "Tarea#1": 33445,
+                "Tarea#2": 44,
+                "Proyecto": 44,
+                "Evaluacion": 44,
+                "Nota final": 879.8750000000001,
+                "Riesgo": "No esta Riesgo"
+            }
+        }
+    },
+    {
+        "1095": {
+            "Modulo 2": {
+                "QuiZ#1": 45,
+                "QuiZ#2": 43,
+                "Tarea#1": 100,
+                "Tarea#2": 90,
+                "Proyecto": 45,
+                "Evaluacion": 100,
+                "Nota final": 63.95,
+                "Riesgo": "No esta Riesgo"
+            }
+        }
+    },
+    {
+        "2030196": {
+            "Modulo 1": {
+                "QuiZ#1": 100,
+                "QuiZ#2": 100,
+                "Tarea#1": 100,
+                "Tarea#2": 100,
+                "Proyecto": 100,
+                "Evaluacion": 100,
+                "Nota final": 100.0,
+                "Riesgo": "No esta Riesgo"
+            }
+        }
+    },
+    {
+        "2030196": {
+            "Modulo 4": {
+                "QuiZ#1": 32,
+                "QuiZ#2": 323,
+                "Tarea#1": 23,
+                "Tarea#2": 2,
+                "Proyecto": 1,
+                "Evaluacion": 1,
+                "Nota final": 10.4,
+                "Riesgo": "Riesgo Alto"
+            }
+        }
+    },
+    {
+        "123": {
+            "Modulo 1": {
+                "QuiZ#1": 21,
+                "QuiZ#2": 21,
+                "Tarea#1": 2,
+                "Tarea#2": 11,
+                "Proyecto": 23,
+                "Evaluacion": 12,
+                "Nota final": 18.775,
+                "Riesgo": "Riesgo Alto"
+            }
+        }
+    },
+    {
+        "1095824299": {
+            "Modulo 9": {
+                "QuiZ#1": 122,
+                "QuiZ#2": 12,
+                "Tarea#1": 12,
+                "Tarea#2": 12,
+                "Proyecto": 90,
+                "Evaluacion": 100,
+                "Nota final": 87.95,
+                "Riesgo": "No esta Riesgo"
+            }
+        }
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {},
+    {
+        "2525": {
+            "Nombre": "Juan Antonio",
+            "Apellido": "Marino ",
+            "Telefono": "3128998",
+            "Cantidad de Horarios": "2",
+            "Horario": null,
+            "Rutas": null,
+            "Estudiantes": [
+                null
+            ],
+            "Ruta": "Note JS y JAVa"
+        }
+    },
+    {
+        "1095": {
+            "Nombre": "www",
+            "Apellido": "11",
+            "Telefono": "11",
+            "Cantidad de Horarios": "2",
+            "Horario": null,
+            "Rutas": [
+                "Note ",
+                "baba",
+                "JAVa"
+            ],
+            "Estudiantes": [
+                null
+            ]
+        }
+    },
+    {
+        "25": {
+            "Nombre": "ww",
+            "Apellido": "ww",
+            "Telefono": "ww",
+            "Estudiantes": [
+                null
+            ]
+        }
+    }
+]

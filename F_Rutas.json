@@ -1,0 +1,92 @@
+[
+    {
+        "Horario 6-10 spuknik": {
+            "U2": {
+                "Ruta Java": {
+                    "Fundamentos de programacioon": "Python",
+                    "Programacion Web": "CSS",
+                    "Programacioon formal": "Java",
+                    "Bases de datos": "MySQL",
+                    "Backend": "Netcore"
+                },
+                "Aula": {
+                    "1095824299": {
+                        "Nombre": "Alejo",
+                        "Apellido": "Rincon",
+                        "Telefono": "3158876402",
+                        "Direccion": "Provenza",
+                        "Acudiente": "Andrea",
+                        "Estado": "Cursando",
+                        "Riesgo": "Riesgo Alto",
+                        "Ruta": null,
+                        "Horario": null,
+                        "Profesor": "Juan marino"
+                    },
+                    "2030196": {
+                        "Nombre": "Alejandro ",
+                        "Apellido": "joaquim",
+                        "Telefono": "3123502846",
+                        "Direccion": "Provenza",
+                        "Acudiente": "Elena Patino ",
+                        "Estado": "Retirado",
+                        "Riesgo": "Riesgo Alto",
+                        "Ruta": null,
+                        "Horario": null,
+                        "Profesor": "Juan Marino "
+                    },
+                    "1098": {
+                        "Nombre": "Juan",
+                        "Apellido": "Rivera",
+                        "Telefono": "323",
+                        "Direccion": "dvggfv",
+                        "Acudiente": "asas",
+                        "Estado": "Cursando",
+                        "Riesgo": "No esta Riesgo",
+                        "Ruta": null,
+                        "Horario": null,
+                        "Profesor": null
+                    },
+                    "1987678": {
+                        "Nombre": "Camilo",
+                        "Apellido": "Rivera",
+                        "Telefono": "324525",
+                        "Direccion": "cabecera",
+                        "Acudiente": "Abdres",
+                        "Estado": "Cursando",
+                        "Riesgo": "No Condicional",
+                        "Ruta": null,
+                        "Horario": null,
+                        "Profesor": null
+                    }
+                },
+                "Profe": {
+                    "2525": {
+                        "Nombre": "Juan Antonio",
+                        "Apellido": "Marino ",
+                        "Telefono": "3128998",
+                        "Cantidad de Horarios": "2",
+                        "Horario": null,
+                        "Rutas": null,
+                        "Estudiantes": [
+                            null
+                        ],
+                        "Ruta": "Note JS y JAVa"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Horario 14-18 spuknik": {
+            "A2": {
+                "Ruta Java": {
+                    "Fundamentos de programacioon": "Python",
+                    "Programacion Web": "CSS",
+                    "Programacioon formal": "Java",
+                    "Bases de datos": "MySQL",
+                    "Backend": "MySQLNetCore"
+                }
+            }
+        }
+    }
+]

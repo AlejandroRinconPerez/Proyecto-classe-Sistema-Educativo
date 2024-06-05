@@ -1,0 +1,111 @@
+Menu (1) 
+Ingreso al sistema
+
+Menu principal
+1- Cordinador
+2- Trainer 
+3- Estudiante
+4- Modulo de Reportes 
+5- salir 
+----------------------------
+Menu para cornidaor --->  'contrasena de coordinado'
+
+1-Para Registrar  
+    1-Registro  Estudiates proce de asignacion  
+        -Examen teorico
+        -examen practic
+
+    2-Registro  admitidos
+
+    3- registro de de trainners y asignacion de maestors 
+    4 - gestionar camper para cambio de los estados pido cedula la valido y cambio el estado 
+        validar la ruta 
+        estado 
+        ruta 
+
+
+TRSINEER RUTA -> RUTA -> HORARIO
+
+
+2-Modificacion de notas
+    
+3- Para ver estudiantes 
+    1- nota en los examenes (Aprobado)
+    2- ver informacion personal 
+    3- salir 
+     
+
+4-Asignar rutas de entrenamiento para los Maestro
+
+5-Crear rutas 
+   
+------------------------------------------
+Menu para maestro ------> (palabra clave para los maestros )
+
+1- Para ver informacion de estuidiantes
+2- Modificar o agregar notas 
+
+-----------------------------------
+Menu para estudiantes -- > el estudiante solo puiede ver sus propia informacion 
+1-ver notas 
+2-datos personales 
+
+
+
+
+Menu Reportes
+    -Listar los campers que se encuentren en estado de inscrito
+    -Listar los campers que aprobaron el examen inicial.
+    -Listar los entrenadores que se encuentran trabajando con CampusLands.
+    -Listar los campers que cuentan con bajo rendimiento.
+    -Listar los campers y trainers que se encuentren asociados a una ruta de entrenamiento.
+    -Mostrar cuantos campers perdieron y aprobaron cada uno de los módulos teniendo en cuenta la ruta de entrenamiento y el entrenador encargado.
+
+
+
+
+
+
+
+
+1-Coordinador
+Admisiones 
+Puede cambiar registrar las notas 
+- Registro de estudiantes 
+    - Registro de candidatos 
+    - Registro de estudiantes y asignacion de profe 
+    -asignacion de las lineas de estudio 
+    - asignar los profesores a una rura   ( dict porfes, con ruta, alumno e identificacion )
+- Acceso de todas las notas 
+- 
+
+
+
+2-Trainer 
+Puede cambiar registrar las notas 
+
+
+3-Camper 
+
+Nota:Areas de entrenamiedot 
+
+apolo: profesor:  ruta:  id: 33 * 4
+spuknuit: profesor:  ruta:  id: 33 * 4
+Artemis: profesor:  ruta:  id: 33 * 4
+
+
+
+cuidado con la cantidad de campeers
+
+
+
+
+
+
+
+
+
+
+
+
+
