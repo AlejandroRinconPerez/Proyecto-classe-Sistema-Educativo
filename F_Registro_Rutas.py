@@ -66,13 +66,14 @@ def Horarios_Salon_rutas ():
         try:
             rutas = cargar_datos_rutas()
             hora = salon_Hotario ()
-            print(hora)
+            #print(hora)
             for ruta in rutas:
                     if hora in ruta:
                         print( "Horario ya existe y esta asignado")
-                        op2 = input("Desea continuar y sobre escribir el horario 1. SI  2. NO?")
+                        op2 = int(input("Desea continuar y sobre escribir el horario 1. SI  2. NO?"))
                         if op2 == 2:
                             return
+
             ruta = {hora: {}}
             rutas.append(ruta)
             print("---------------------------------------")

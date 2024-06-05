@@ -57,6 +57,24 @@
                         "Ruta": null,
                         "Horario": null,
                         "Profesor": null
+                    },
+                    "1027": {
+                        "Nombre": "jordan",
+                        "Apellido": "durand",
+                        "Telefono": "334243",
+                        "Direccion": "caberca",
+                        "Acudiente": "manel",
+                        "Estado": "Crsando ",
+                        "Riesgo": "No esta Riesgo"
+                    },
+                    "1005cc": {
+                        "Nombre": "Jaime ",
+                        "Apellido": "prada",
+                        "Telefono": "233",
+                        "Direccion": "dss",
+                        "Acudiente": "ddsd",
+                        "Estado": "cursando",
+                        "Riesgo": "No esta Riesgo"
                     }
                 },
                 "Profe": {
@@ -85,6 +103,19 @@
                     "Programacioon formal": "Java",
                     "Bases de datos": "MySQL",
                     "Backend": "MySQLNetCore"
+                }
+            }
+        }
+    },
+    {
+        "Horario 18-20 Artemis": {
+            "W@": {
+                "Ruta NetCore": {
+                    "Fundamentos de programacioon": "Ohython",
+                    "Programacion Web": "CSS",
+                    "Programacioon formal": "C#",
+                    "Bases de datos": "MySQL",
+                    "Backend": "NetCore"
                 }
             }
         }

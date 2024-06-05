@@ -91,5 +91,16 @@
             "Estado": "Cursando",
             "Riesgo": "No esta Riesgo"
         }
+    },
+    {
+        "1027": {
+            "Nombre": "jordan",
+            "Apellido": "durand",
+            "Telefono": "334243",
+            "Direccion": "caberca",
+            "Acudiente": "manel",
+            "Estado": "Crsando ",
+            "Riesgo": "No esta Riesgo"
+        }
     }
 ]

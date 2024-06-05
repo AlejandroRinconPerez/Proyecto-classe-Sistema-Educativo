@@ -168,5 +168,15 @@
             "Nota examen practico": 70,
             "Aprobado": true
         }
+    },
+    {
+        "1027": {
+            "Nombre": "jordan",
+            "Apellido": "duran",
+            "Telefono": 2222,
+            "Nota examen Teorico": 90,
+            "Nota examen practico": 90,
+            "Aprobado": true
+        }
     }
 ]
