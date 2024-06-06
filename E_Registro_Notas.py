@@ -30,44 +30,7 @@ def Modulos_Elegir ():
                 print(f"Se ha producido un error: {e}")
                 print("Por favor, intente nuevamente.")
 ########################################################################
-def Registro_moduloX():
-    rutas = cargar_datos_rutas()
-    
-    print("-------------------------------------------------")
-    print("Una vez culminado el modulo agregue todas las notas")
-    doc = input("Ingrese numero de documento del estudiante:  ")
-    hora = salon_Hotario ()
-    Nombre_Grupo = input("Ingrese grupo, ej. U2, U1, A2: ")
-    modulo = Modulos_Elegir ()
-    
-        #ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = {""}
-    notas_modulo = {}
-    notas_modulo["QuiZ#1"] = int(input("Ingrese la Nota del Quiz#1:  "))
-    notas_modulo["QuiZ#2"] = int(input("Ingrese la Nota del Quiz#2:  "))
-    notas_modulo["Tarea#1"] = int(input("Ingrese la Nota delTarea#1:  "))
-    notas_modulo["Tarea#2"] = int(input("Ingrese la Nota del Tarea#2:  "))
-    notas_modulo["Proyecto"] = int(input("Ingrese la Nota delProyecto:  "))
-    notas_modulo["Evaluacion"] =int(input("Ingrese la Nota del Evaluacion:  "))
-    for ruta in rutas:
-        if hora in ruta:
-            if Nombre_Grupo in ruta[hora]:
-                if "Aula" in ruta[hora][Nombre_Grupo]:
-                    if doc in ruta[hora][Nombre_Grupo]["Aula"]:
-                        if modulo not in ruta[hora][Nombre_Grupo]["Aula"][doc]:
-                            ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] ={}
-                        ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = notas_modulo
-                        
-                       
-                        
-            
-            
-    
-    guardar_datos_notas(rutas)
-    return
-  
-        
-                
-3
+
 
 
 
@@ -155,43 +118,107 @@ def ver_notas_por_estudiante ():
 #ver_notas_por_estudiante ()
 
 def Registro_moduloXX():
+    while True:
+        try:
+            rutas = cargar_datos_rutas()
+            
+            print("-------------------------------------------------")
+            print("Una vez culminado el modulo agregue todas las notas")
+            doc = input("Ingrese numero de documento del estudiante:  ")
+            hora =  salon_Hotario()
+            Nombre_Grupo = input("Ingrese grupo, ej. U2, U1, A2: ")
+            modulo = Modulos_Elegir()
+            
+            notas_modulo = {}
+            notas_modulo["QuiZ#1"] = int(input("Ingrese la Nota del Quiz#1:  ")) 
+            notas_modulo["QuiZ#2"] = int(input("Ingrese la Nota del Quiz#2:  "))
+            notas_modulo["Tarea#1"] = int(input("Ingrese la Nota del Tarea#1:  "))
+            notas_modulo["Tarea#2"] = int(input("Ingrese la Nota del Tarea#2:  "))
+            notas_modulo["Proyecto"] = int(input("Ingrese la Nota del Proyecto:  "))
+            notas_modulo["Evaluacion"] = int(input("Ingrese la Nota del Evaluacion:  "))
+            ###############################################################################
+            #Calculo de nota final 
+            notas10 = ((notas_modulo["QuiZ#1"] + notas_modulo["QuiZ#2"] + notas_modulo["Tarea#1"] +notas_modulo["Tarea#2"] )/4)*0.10
+            notas30 = notas_modulo["Evaluacion"] *0.30
+            notas60 = notas_modulo["Proyecto"] *0.60
+            notas_modulo["Nota final"]= notas10 + notas30 + notas60
+            ###############################################################################
+            #risk evaluaation to double check 
+            
+            if notas_modulo["Nota final"] < 60:
+                        notas_modulo["Riesgo"]= "Riesgo Alto"
+            elif  notas_modulo["Nota final"] > 59:
+                        notas_modulo["Riesgo"]= "No esta Riesgo"
+            # to add the info to the dict 
+            for ruta in rutas:
+                if hora in ruta:
+                    if Nombre_Grupo in ruta[hora]:
+                        if "Aula" in ruta[hora][Nombre_Grupo]:
+                            if doc in ruta[hora][Nombre_Grupo]["Aula"]:
+                                if modulo not in ruta[hora][Nombre_Grupo]["Aula"][doc]:
+                                    ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = {}
+                                ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = notas_modulo
+                                break
+            
+                print("No se encontró el estudiante en la ruta especificada.")
+            
+            guardar_datos_rutas(rutas)
+        except Exception as e:
+                print(f"Se ha producido un error: {e}")
+                print("Por favor, intente nuevamente.")   
+    
+def Calculo_Riesgo():
     rutas = cargar_datos_rutas()
-    
-    print("-------------------------------------------------")
-    print("Una vez culminado el modulo agregue todas las notas")
-    doc = input("Ingrese numero de documento del estudiante:  ")
-    hora =  salon_Hotario()
-    Nombre_Grupo = input("Ingrese grupo, ej. U2, U1, A2: ")
     modulo = Modulos_Elegir()
-    
-    notas_modulo = {}
-    notas_modulo["QuiZ#1"] = int(input("Ingrese la Nota del Quiz#1:  "))
-    notas_modulo["QuiZ#2"] = int(input("Ingrese la Nota del Quiz#2:  "))
-    notas_modulo["Tarea#1"] = int(input("Ingrese la Nota del Tarea#1:  "))
-    notas_modulo["Tarea#2"] = int(input("Ingrese la Nota del Tarea#2:  "))
-    notas_modulo["Proyecto"] = int(input("Ingrese la Nota del Proyecto:  "))
-    notas_modulo["Evaluacion"] = int(input("Ingrese la Nota del Evaluacion:  "))
-    
-    encontrado = False
+
+    if modulo:
+        print("-------------------------------------------------")
+        print(f"Cargando estudiantes con riesgo alto en el módulo {modulo}")
+        for ruta in rutas:
+            for hora, grupos in ruta.items():
+                if "Aula" in grupos:
+                    for grupo, estudiantes in grupos["Aula"].items():
+                        for estudiante_id, estudiante_info in estudiantes.items():
+                            if modulo in estudiante_info and estudiante_info[modulo]["Riesgo"] == "Riesgo Alto":
+                                print(f"Estudiante: {estudiante_info['Nombre']} {estudiante_info['Apellido']} - Riesgo: {estudiante_info[modulo]['Riesgo']}")
+
+    else:
+        print("Opción de módulo no válida.")
+
+
+
+def Mostrar_Notas_Estudiante():
+    rutas = cargar_datos_rutas()
+
+    doc = input("Ingrese número de documento del estudiante: ")
+    hora = salon_Hotario()
+    Nombre_Grupo = input("Ingrese grupo, ej. U2, U1, A2: ")
+
     for ruta in rutas:
-        print(f"Revisando ruta: {ruta}")
         if hora in ruta:
-            print(f"  Encontrado horario: {hora}")
             if Nombre_Grupo in ruta[hora]:
-                print(f"  Encontrado grupo: {Nombre_Grupo}")
                 if "Aula" in ruta[hora][Nombre_Grupo]:
-                    print(f"  Encontrado aula")
                     if doc in ruta[hora][Nombre_Grupo]["Aula"]:
-                        print(f"  Encontrado documento: {doc}")
-                        if modulo not in ruta[hora][Nombre_Grupo]["Aula"][doc]:
-                            ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = {}
-                            print("Modulo creado")
-                        ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = notas_modulo
-                        encontrado = True
-                        break
-    if not encontrado:
-        print("No se encontró el estudiante en la ruta especificada.")
+                        estudiante = ruta[hora][Nombre_Grupo]["Aula"][doc]
+                        print(f"Notas del estudiante {estudiante['Nombre']} {estudiante['Apellido']}:")
+                        for modulo, notas_modulo in estudiante.items():
+                            if modulo not in ['Nombre', 'Apellido', 'Telefono', 'Direccion', 'Acudiente', 'Estado', 'Ruta', 'Horario', 'Profesor']:
+                                print(f"\nMódulo: {modulo}")
+                                for clave, valor in notas_modulo.items():
+                                    if clave != "Riesgo":
+                                        print(f"{clave}: {valor}")
+                        return
+
+    print("No se encontró el estudiante en la ruta especificada.")
+
+# Llamada a la función
+#Mostrar_Notas_Estudiante()
+
+#Registro_moduloXX()
+            
+            
+           
     
-    guardar_datos_rutas(rutas)
+    
 
 #Registro_moduloXX()

@@ -113,5 +113,16 @@
             "Estado": "Aprobado",
             "Riesgo": "No esta Riesgo"
         }
+    },
+    {
+        "1234567890": {
+            "Nombre": "Juan",
+            "Apellido": "Garc\u00eda",
+            "Telefono": "3101234567",
+            "Direccion": "Calle 123",
+            "Acudiente": "Mar\u00eda Garc\u00eda",
+            "Estado": "Cursando",
+            "Riesgo": "No esta Riesgo"
+        }
     }
 ]

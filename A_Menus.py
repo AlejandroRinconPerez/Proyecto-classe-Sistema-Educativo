@@ -122,7 +122,7 @@ def Mostrar_coordinador_trainers():
 def Trainer_menu():
     while True:
         try:
-            opciones_trainner = ["1. Para ver ruta asignada", # def trainer_ruta ():
+            opciones_trainner = ["1. Para ver ver horario id nombre", # def trainer_ruta ():
                                 "2. Para asignar notas en un modulo(n)",
                                 "3. Para Ver las notas de un camper",
                                 "4. Para salir"]
@@ -229,9 +229,9 @@ while True:
             elif op_Campers == 8:
                 agregar_estudiante_ruta()
             elif op_Campers == 9:
-                Registro_modulo_Fundamentos_de_programacioon()
+                Registro_moduloXX()
             elif op_Campers == 10:
-                ver_notas_por_estudiante()
+                Mostrar_Notas_Estudiante()
             elif op_Campers == 11:
                 print("Volviendo al Menu")
                 
@@ -240,38 +240,40 @@ while True:
     elif op_Principal == 2:
         op_trainers2 = Trainer_menu()
         if op_trainers2 == 1:
-            trainer_ruta()
+            Profe_Ruta()
         elif op_trainers2 == 2:
-            Registro_modulo_Fundamentos_de_programacioon()
+            Registro_moduloXX()
         elif op_trainers2 == 3:
-            ver_notas_por_estudiante()
+            Mostrar_Notas_Estudiante()
         elif op_trainers2 == 4:
             print("Volviendo al Menu")
             
     elif op_Principal == 3:
         opciones_camper2 = menu_Camper()
         if opciones_camper2 == 1:
-            ver_notas_por_estudiante()
+             Mostrar_Notas_Estudiante()
         elif opciones_camper2 == 2:
             camper_ruta_solo()
         elif opciones_camper2 == 3:
             print("Volviendo al Menu")
             
     elif op_Principal == 4:
-        menu_sub_reportes = sub_menu_reportes()
-        if menu_sub_reportes == 1:
+        op_Reportes = sub_menu_reportes()
+        if op_Reportes == 1:
             ver_inscritos()
-        elif menu_sub_reportes == 2:
+        elif op_Reportes == 2:
             Ver_Candidatos_Aprobados()
-        elif menu_sub_reportes == 3:
+        elif op_Reportes == 3:
             Profe_Ruta()
-        elif menu_sub_reportes == 4:
+        elif op_Reportes == 4:
             cambiar_riesgo_camper_Alto()
-        elif menu_sub_reportes == 5:
+        elif op_Reportes == 5:
             ver_Camper_por_Ruta_con_Profe()
-        elif menu_sub_reportes == 6:
+        elif op_Reportes == 6:
+            Profe_Ruta()
+            ver_Camper_por_Ruta_con_Profe()
             print("No realizado") # Falta asociar las rutas y notas
-        elif menu_sub_reportes == 7:
+        elif op_Reportes == 7:
             print("Volviendo al Menu")
             
     elif op_Principal == 5:
@@ -298,40 +300,3 @@ while True:
     
     
     
-    #Registro_modulo_Fundamentos_de_programacioon()
-    
-    
-    
-#########################################################################################################
-# def sub_menu_reportes ( ):
-#     print("-------------------------------------------------------")
-#     menu_principal = ("1. Para campers inscritos", "2. Para Campers que abrobaron el examen inicial", 
-#                       "3. Para ver trainers",
-#                       "4. Para Campers no aprovados", "5. Ruta de entranamiento, profesor y camper",
-#                       "6.  Para ver campers aprovados o no aprovados", "7. Para salir")
-#     for i in menu_principal:
-#         print(i)
-#     op = int(input("Ingrese la opcion de menu deseado: "))
-#     print("-------------------------------------------------------")
-#     return op
-    
-# def menu_principal_opciones():
-#     while True:
-#         op = sub_menu_reportes()
-#         if op == 1: 
-#             Campers_inscritos()
-#         elif op == 2:
-#             Campers_ingresados()
-#         elif op == 3:
-#             ver_trainers()
-#         elif op == 4:
-#             Ver_campers_no_aprovados()
-#         elif op == 5:
-#             Ver_Ruta_profe_Estudiante()
-#         elif op == 6:
-#             ver_camepres_aprovados_no_aprovados()
-#         elif op == 7:
-#             print(" Salir del sistema")
-#             break
-#         else:
-#             print("Opcion no Valida")

@@ -62,8 +62,7 @@ def salon_Hotario ():
             print("Por favor, intente nuevamente.")
             
 def Horarios_Salon_rutas ():
-    while True:
-        try:
+    
             rutas = cargar_datos_rutas()
             hora = salon_Hotario ()
             #print(hora)
@@ -113,9 +112,7 @@ def Horarios_Salon_rutas ():
             print("-------------------------")
             guardar_datos_rutas(rutas)
             return 
-        except Exception as e:
-            print(f"Se ha producido un error: {e}")
-            print("Por favor, intente nuevamente.")
+       
     
 
             
@@ -179,7 +176,8 @@ def agregar_Profesor_ruta():
             print(f"Se ha producido un error: {e}")
             print("Por favor, intente nuevamente.")
         
-        
+
+
 def ver_Camper_por_Ruta_con_Profe():
     while True:
         try:
@@ -207,7 +205,7 @@ def ver_Camper_por_Ruta_con_Profe():
             print(f"Se ha producido un error: {e}")
             print("Por favor, intente nuevamente.")
         
-            
+#ver_Camper_por_Ruta_con_Profe()           
 def camper_ruta ():     
     while True:
         try:
@@ -250,8 +248,6 @@ def camper_ruta_solo ():
             print(f"Se ha producido un error: {e}")
             print("Por favor, intente nuevamente.")
 def Profe_Ruta():
-    while True:
-        try:
             rutas = cargar_datos_rutas()
             for ruta in rutas:
                 for hora, grupo_datos in ruta.items():
@@ -262,10 +258,11 @@ def Profe_Ruta():
                                 print(f"En el Horario  {hora}")
                                 print(f"Profesor ID: {profe_id}")
                                 print(f"Nombre: {profe_info['Nombre']}")
-            return
-        except Exception as e:
-            print(f"Se ha producido un error: {e}")
-            print("Por favor, intente nuevamente.")    
+            
+                           
+                           
+            
+        
 
 
 

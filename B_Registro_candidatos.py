@@ -50,9 +50,7 @@ def Registro_Notas_Candidatos():
             print("Por favor, intente nuevamente.")
             
 def Ver_Candidatos():
-    while True:
-        try:
-    
+   
             candidatos = cargar_datos_candidatos()
             doc = input("Ingrese numero de documento del camper inscrito:  ")
             for candidato in candidatos:
@@ -61,10 +59,8 @@ def Ver_Candidatos():
                     return
                 
             print("No inscrito")
-        except Exception as e:
-            print(f"Se ha producido un error: {e}")
-            print("Por favor, intente nuevamente.")
-            break
+       
+            
 def Ver_Candidatos_Aprobados():
     while True:
         try:
@@ -72,27 +68,23 @@ def Ver_Candidatos_Aprobados():
             for candidato in candidatos:
                 for llave, valor in candidato.items():
                     if candidato[llave]["Aprobado"] == True:
-                        print(f"Este camper {candidato[llave]["Nombre"]}aprobo el examen inicial # doc ={llave}")
-                        return
-            print("No inscrito o no aprobo")
-            break
+                        print(f"Este camper {candidato[llave]["Nombre"]}  aprobo el examen inicial # doc ={llave}")
+            return
+            
         except Exception as e:
             print(f"Se ha producido un error: {e}")
             print("Por favor, intente nuevamente.")
 def ver_inscritos ():
-    while True:
-        try:
+   
             candidatos = cargar_datos_candidatos()
             for candidato in candidatos:
                 for llave, valor in candidato.items():
                     print( f" Nombre de cmper inscrito {candidato[llave]["Nombre"]} con documento {llave}")
-            break
-        except Exception as e:
-            print(f"Se ha producido un error: {e}")
-            print("Por favor, intente nuevamente.")
+            
+        
             
     
-
+#Ver_Candidatos_Aprobados()
         
     
     

@@ -142,18 +142,15 @@ def asignar_rutas_trainer ():
             print("Por favor, intente nuevamente.")
             
 def trainer_ruta ():
-    while True:
-        try:
+
             Trainers = cargar_datos_trainers()
             for trainer in Trainers:
                 for  llave, valor in trainer.items(): 
                     print(f"El trainer {valor['Nombre']} tiene asignado: {valor['Rutas']}")
             return
-        except Exception as e:
-            print(f"Se ha producido un error: {e}")
-            print("Por favor, intente nuevamente.")    
+        
     
-     
+#trainer_ruta ()
                    
 
     #554390

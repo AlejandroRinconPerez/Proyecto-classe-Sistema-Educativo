@@ -17,7 +17,6 @@
                         "Direccion": "Provenza",
                         "Acudiente": "Andrea",
                         "Estado": "Cursando",
-                        "Riesgo": "Riesgo Alto",
                         "Ruta": null,
                         "Horario": null,
                         "Profesor": "Juan marino",
@@ -27,7 +26,8 @@
                             "Tarea#1": 21,
                             "Tarea#2": 21,
                             "Proyecto": 100,
-                            "Evaluacion": 100
+                            "Evaluacion": 100,
+                            "Riesgo": "Riesgo Alto"
                         },
                         "Fundamentos de programacion": {
                             "QuiZ#1": 21,
@@ -51,7 +51,8 @@
                             "Tarea#1": 21,
                             "Tarea#2": 21,
                             "Proyecto": 100,
-                            "Evaluacion": 100
+                            "Evaluacion": 100,
+                            "Riesgo": "Riesgo Alto"
                         }
                     },
                     "2030196": {
@@ -71,7 +72,8 @@
                             "Tarea#1": 31,
                             "Tarea#2": 31,
                             "Proyecto": 100,
-                            "Evaluacion": 100
+                            "Evaluacion": 100,
+                            "Riesgo": "Riesgo Alto"
                         }
                     },
                     "1098": {
@@ -114,7 +116,16 @@
                         "Direccion": "dss",
                         "Acudiente": "ddsd",
                         "Estado": "cursando",
-                        "Riesgo": "No esta Riesgo"
+                        "Para Programacion Web": {
+                            "QuiZ#1": 21,
+                            "QuiZ#2": 45,
+                            "Tarea#1": 45,
+                            "Tarea#2": 45,
+                            "Proyecto": 13,
+                            "Evaluacion": 100,
+                            "Nota final": 41.699999999999996,
+                            "Riesgo": "Riesgo Alto"
+                        }
                     },
                     "12345": {
                         "Nombre": "alejo",
@@ -123,7 +134,16 @@
                         "Direccion": "palmar del viento",
                         "Acudiente": "aaa",
                         "Estado": "Aprobado",
-                        "Riesgo": "No esta Riesgo"
+                        "Riesgo": "No esta Riesgo",
+                        "Para Programacion Web": {
+                            "QuiZ#1": 21,
+                            "QuiZ#2": 21,
+                            "Tarea#1": 21,
+                            "Tarea#2": 21,
+                            "Proyecto": 100,
+                            "Evaluacion": 100,
+                            "Riesgo": "Riesgo Alto"
+                        }
                     }
                 },
                 "Profe": {
@@ -152,6 +172,16 @@
                     "Programacioon formal": "Java",
                     "Bases de datos": "MySQL",
                     "Backend": "MySQLNetCore"
+                },
+                "Profe": {
+                    "2345678901": {
+                        "Nombre": "Maria",
+                        "Apellido": "Rodr\u00edguez",
+                        "Telefono": "3243423",
+                        "Estudiantes": [
+                            null
+                        ]
+                    }
                 }
             }
         }
@@ -165,6 +195,32 @@
                     "Programacioon formal": "C#",
                     "Bases de datos": "MySQL",
                     "Backend": "NetCore"
+                }
+            }
+        }
+    },
+    {
+        "Horario 14-18 spuknik": {
+            "A1": {
+                "Java": {
+                    "Fundamentos de programacioon": "Python",
+                    "Programacion Web": "CSS",
+                    "Programacioon formal": "C#",
+                    "Bases de datos": "Mysql",
+                    "Backend": "NetCore"
+                }
+            }
+        }
+    },
+    {
+        "null": {
+            "^k": {
+                "jhntsfh": {
+                    "Fundamentos de programacioon": "gfhfh",
+                    "Programacion Web": "fgdhdfh",
+                    "Programacioon formal": "gdhgfdh",
+                    "Bases de datos": "dfgh",
+                    "Backend": ""
                 }
             }
         }
