@@ -198,5 +198,15 @@
             "Nota examen practico": 100,
             "Aprobado": true
         }
+    },
+    {
+        "241145": {
+            "Nombre": "Alejandro ",
+            "Apellido": "Rincon",
+            "Telefono": 3147,
+            "Nota examen Teorico": 90,
+            "Nota examen practico": 90,
+            "Aprobado": true
+        }
     }
 ]

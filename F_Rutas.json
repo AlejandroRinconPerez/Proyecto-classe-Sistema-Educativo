@@ -224,5 +224,39 @@
                 }
             }
         }
+    },
+    {
+        "Horario 10-14 Artemis": {
+            "M2": {
+                "Ruta Java": {
+                    "Fundamentos de programacioon": "Python",
+                    "Programacion Web": "Bootstrap",
+                    "Programacioon formal": "C#",
+                    "Bases de datos": "Mysql",
+                    "Backend": "Netcore"
+                },
+                "Aula": {
+                    "241145": {
+                        "Nombre": "Alejandro ",
+                        "Apellido": "Rincon",
+                        "Telefono": "3178876402",
+                        "Direccion": "Palmar",
+                        "Acudiente": "Joaquin",
+                        "Estado": "Expulsado",
+                        "Riesgo": "No esta Riesgo",
+                        "Para Programacion Web": {
+                            "QuiZ#1": 100,
+                            "QuiZ#2": 100,
+                            "Tarea#1": 100,
+                            "Tarea#2": 90,
+                            "Proyecto": 80,
+                            "Evaluacion": 70,
+                            "Nota final": 78.75,
+                            "Riesgo": "No esta Riesgo"
+                        }
+                    }
+                }
+            }
+        }
     }
 ]

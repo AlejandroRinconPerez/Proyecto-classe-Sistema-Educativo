@@ -36,7 +36,7 @@
             "Direccion": "dvggfv",
             "Acudiente": "asas",
             "Estado": "Cursando",
-            "Riesgo": "No esta Riesgo",
+            "Riesgo": "Riesgo Alto",
             "Ruta": null,
             "Horario": null,
             "Profesor": null
@@ -50,7 +50,7 @@
             "Direccion": "cabecera",
             "Acudiente": "Abdres",
             "Estado": "Cursando",
-            "Riesgo": "No Condicional",
+            "Riesgo": "Riesgo Alto",
             "Ruta": null,
             "Horario": null,
             "Profesor": null
@@ -64,7 +64,7 @@
             "Direccion": "Palmar del viento ",
             "Acudiente": "Elena",
             "Estado": "Cursando",
-            "Riesgo": "No Condicional",
+            "Riesgo": "Riesgo Alto",
             "Ruta": null,
             "Horario": null,
             "Profesor": null
@@ -77,7 +77,7 @@
             "Telefono": "233",
             "Direccion": "dss",
             "Acudiente": "ddsd",
-            "Estado": "cursando",
+            "Estado": "Riesgo Alto",
             "Riesgo": "No esta Riesgo"
         }
     },
@@ -100,7 +100,7 @@
             "Direccion": "caberca",
             "Acudiente": "manel",
             "Estado": "Crsando ",
-            "Riesgo": "No esta Riesgo"
+            "Riesgo": "Riesgo Alto"
         }
     },
     {
@@ -111,7 +111,7 @@
             "Direccion": "palmar del viento",
             "Acudiente": "aaa",
             "Estado": "Aprobado",
-            "Riesgo": "No esta Riesgo"
+            "Riesgo": "Riesgo Alto"
         }
     },
     {
@@ -122,7 +122,18 @@
             "Direccion": "Calle 123",
             "Acudiente": "Mar\u00eda Garc\u00eda",
             "Estado": "Cursando",
-            "Riesgo": "No esta Riesgo"
+            "Riesgo": "Riesgo Alto"
+        }
+    },
+    {
+        "241145": {
+            "Nombre": "Alejandro ",
+            "Apellido": "Rincon",
+            "Telefono": "3178876402",
+            "Direccion": "Palmar",
+            "Acudiente": "Joaquin",
+            "Estado": "Retirado",
+            "Riesgo": "Riesgo Alto"
         }
     }
 ]

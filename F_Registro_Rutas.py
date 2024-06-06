@@ -1,4 +1,4 @@
-from turtle import update
+
 from F_Datos_Rutas import*
 from D_Datos_Trainners import*
 from D_Registro_Trainers import*

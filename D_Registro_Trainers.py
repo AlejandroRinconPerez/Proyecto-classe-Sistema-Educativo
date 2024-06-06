@@ -105,7 +105,7 @@ def lista_trainers ():
             for trainer in Trainers:
                 for llave, valor in trainer.items():
                     cont = cont + 1
-                    print(f"El trainer {trainer[llave]["Nombre"]} con las rutas  {trainer[llave]["Rutas"]}")
+                    print(f"El trainer {trainer[llave]['Nombre']} con las rutas  {trainer[llave]['Rutas']}")
                     
             return
         except Exception as e:

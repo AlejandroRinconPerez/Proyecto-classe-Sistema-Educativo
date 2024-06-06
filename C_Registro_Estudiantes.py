@@ -97,7 +97,7 @@ def cambiar_riesgo_camper():
             doc = input("Ingrese numero de documento del estudiante:  ")
             for estudiante in estudiantes:
                 if  doc in estudiante:
-                    print (f" el estudiante de {doc} y Nombre {estudiante[doc]["Nombre"]} esta {estudiante[doc]["Riesgo"]}")
+                    print (f" el estudiante de {doc} y Nombre {estudiante[doc]['Nombre']} esta {estudiante[doc]['Riesgo']}")
                     return
             print("Estudiante no registrado.")
             break
@@ -239,7 +239,7 @@ def cambiar_riesgo_camper_Alto():
             for estudiante in estudiantes:
                 for llave, valor in estudiante.items():
                     if estudiante[llave]["Riesgo"]=="Riesgo Alto":
-                        print (f"Estudiante con documento {llave}  y nombre {estudiante[llave]["Nombre"]} esta en rtiesgo")
+                        print (f"Estudiante con documento {llave}  y nombre {estudiante[llave]['Nombre']} esta en Riesgo")
                     #imprimir la listae campers
             return
         except Exception as e:

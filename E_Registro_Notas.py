@@ -118,8 +118,7 @@ def ver_notas_por_estudiante ():
 #ver_notas_por_estudiante ()
 
 def Registro_moduloXX():
-    while True:
-        try:
+    
             rutas = cargar_datos_rutas()
             
             print("-------------------------------------------------")
@@ -158,14 +157,12 @@ def Registro_moduloXX():
                                 if modulo not in ruta[hora][Nombre_Grupo]["Aula"][doc]:
                                     ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = {}
                                 ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = notas_modulo
-                                break
+                                return
             
                 print("No se encontró el estudiante en la ruta especificada.")
-            
             guardar_datos_rutas(rutas)
-        except Exception as e:
-                print(f"Se ha producido un error: {e}")
-                print("Por favor, intente nuevamente.")   
+            guardar_datos_rutas(rutas)
+       
     
 def Calculo_Riesgo():
     rutas = cargar_datos_rutas()
