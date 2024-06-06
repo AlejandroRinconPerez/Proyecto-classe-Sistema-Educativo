@@ -20,7 +20,39 @@
                         "Riesgo": "Riesgo Alto",
                         "Ruta": null,
                         "Horario": null,
-                        "Profesor": "Juan marino"
+                        "Profesor": "Juan marino",
+                        "Para Programacion Web": {
+                            "QuiZ#1": 21,
+                            "QuiZ#2": 21,
+                            "Tarea#1": 21,
+                            "Tarea#2": 21,
+                            "Proyecto": 100,
+                            "Evaluacion": 100
+                        },
+                        "Fundamentos de programacion": {
+                            "QuiZ#1": 21,
+                            "QuiZ#2": 31,
+                            "Tarea#1": 31,
+                            "Tarea#2": 31,
+                            "Proyecto": 31,
+                            "Evaluacion": 31
+                        },
+                        "null": {
+                            "QuiZ#1": 1,
+                            "QuiZ#2": 41,
+                            "Tarea#1": 41,
+                            "Tarea#2": 41,
+                            "Proyecto": 100,
+                            "Evaluacion": 100
+                        },
+                        "Para Bases de datos": {
+                            "QuiZ#1": 21,
+                            "QuiZ#2": 21,
+                            "Tarea#1": 21,
+                            "Tarea#2": 21,
+                            "Proyecto": 100,
+                            "Evaluacion": 100
+                        }
                     },
                     "2030196": {
                         "Nombre": "Alejandro ",
@@ -32,7 +64,15 @@
                         "Riesgo": "Riesgo Alto",
                         "Ruta": null,
                         "Horario": null,
-                        "Profesor": "Juan Marino "
+                        "Profesor": "Juan Marino ",
+                        "Para Programacion Web": {
+                            "QuiZ#1": 21,
+                            "QuiZ#2": 31,
+                            "Tarea#1": 31,
+                            "Tarea#2": 31,
+                            "Proyecto": 100,
+                            "Evaluacion": 100
+                        }
                     },
                     "1098": {
                         "Nombre": "Juan",
@@ -74,6 +114,15 @@
                         "Direccion": "dss",
                         "Acudiente": "ddsd",
                         "Estado": "cursando",
+                        "Riesgo": "No esta Riesgo"
+                    },
+                    "12345": {
+                        "Nombre": "alejo",
+                        "Apellido": "rindo",
+                        "Telefono": "317",
+                        "Direccion": "palmar del viento",
+                        "Acudiente": "aaa",
+                        "Estado": "Aprobado",
                         "Riesgo": "No esta Riesgo"
                     }
                 },

@@ -35,7 +35,6 @@ def Registro_moduloX():
     
     print("-------------------------------------------------")
     print("Una vez culminado el modulo agregue todas las notas")
-    rutas = cargar_datos_rutas()
     doc = input("Ingrese numero de documento del estudiante:  ")
     hora = salon_Hotario ()
     Nombre_Grupo = input("Ingrese grupo, ej. U2, U1, A2: ")
@@ -58,14 +57,17 @@ def Registro_moduloX():
                             ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] ={}
                         ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = notas_modulo
                         
+                       
+                        
             
             
     
-        
     guardar_datos_notas(rutas)
+    return
+  
         
                 
-Registro_moduloX ()
+3
 
 
 
@@ -152,5 +154,44 @@ def ver_notas_por_estudiante ():
 #Registro_modulo ()
 #ver_notas_por_estudiante ()
 
-
+def Registro_moduloXX():
+    rutas = cargar_datos_rutas()
     
+    print("-------------------------------------------------")
+    print("Una vez culminado el modulo agregue todas las notas")
+    doc = input("Ingrese numero de documento del estudiante:  ")
+    hora =  salon_Hotario()
+    Nombre_Grupo = input("Ingrese grupo, ej. U2, U1, A2: ")
+    modulo = Modulos_Elegir()
+    
+    notas_modulo = {}
+    notas_modulo["QuiZ#1"] = int(input("Ingrese la Nota del Quiz#1:  "))
+    notas_modulo["QuiZ#2"] = int(input("Ingrese la Nota del Quiz#2:  "))
+    notas_modulo["Tarea#1"] = int(input("Ingrese la Nota del Tarea#1:  "))
+    notas_modulo["Tarea#2"] = int(input("Ingrese la Nota del Tarea#2:  "))
+    notas_modulo["Proyecto"] = int(input("Ingrese la Nota del Proyecto:  "))
+    notas_modulo["Evaluacion"] = int(input("Ingrese la Nota del Evaluacion:  "))
+    
+    encontrado = False
+    for ruta in rutas:
+        print(f"Revisando ruta: {ruta}")
+        if hora in ruta:
+            print(f"  Encontrado horario: {hora}")
+            if Nombre_Grupo in ruta[hora]:
+                print(f"  Encontrado grupo: {Nombre_Grupo}")
+                if "Aula" in ruta[hora][Nombre_Grupo]:
+                    print(f"  Encontrado aula")
+                    if doc in ruta[hora][Nombre_Grupo]["Aula"]:
+                        print(f"  Encontrado documento: {doc}")
+                        if modulo not in ruta[hora][Nombre_Grupo]["Aula"][doc]:
+                            ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = {}
+                            print("Modulo creado")
+                        ruta[hora][Nombre_Grupo]["Aula"][doc][modulo] = notas_modulo
+                        encontrado = True
+                        break
+    if not encontrado:
+        print("No se encontró el estudiante en la ruta especificada.")
+    
+    guardar_datos_rutas(rutas)
+
+#Registro_moduloXX()
