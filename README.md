@@ -4,7 +4,7 @@
 ## Contenido
 |  | Titulo  |
 |--|--|
-| 1| **Descripción** |
+| 1|**Descripción**| 
 | 2| **Funcionalidad**|
 | 3 | **Explicación de Archivos**|
 | 4 | **Ejecución**|
@@ -25,3 +25,11 @@
 -   **Interfaz de Usuario Intuitiva**: Diseñada para ser fácil de usar por administradores y personal educativo, con opciones claras para cada función principal del sistema.
 -   **Seguridad y Privacidad**: Implementa medidas de seguridad robustas para proteger la integridad de los datos de los estudiantes y la información del sistema en general.
 -   **Documentación y Soporte**: Incluye documentación detallada sobre la instalación, configuración y uso del sistema, así como un sistema de soporte para resolver problemas y responder preguntas.
+## Funcionalidad
+
+Para utilizar el sistema desde la consola, primero descarga el repositorio y navega hasta la carpeta 'main'. Desde allí, podrás ejecutar el sistema y acceder a todas sus funcionalidades.
+
+## Explicación de Archivos
+Los archivos en este documento están organizados alfabéticamente, donde las funciones de carga de datos y los archivos están agrupados por familias A, B y C.
+
+
